@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <com.pinkal.todolist.customfont.TextView
+            android:id="@+id/txtCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/btnCatEdit"
+            android:text="@string/addCategory"
+            android:textColor="@color/darkGray"
+            android:textSize="18dp" />
+
+        <com.pinkal.todolist.customfont.Button
+            android:id="@+id/btnCatEdit"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btnCatDelete"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_mode_edit_black_24dp"
+            android:drawableTint="@color/darkGray" />
+
+        <com.pinkal.todolist.customfont.Button
+            android:id="@+id/btnCatDelete"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_cancel_black_24dp"
+            android:drawableTint="@color/darkGray" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

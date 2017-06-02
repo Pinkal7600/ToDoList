@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rowbackgroundselector">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+
+            <CheckBox
+                android:id="@+id/checkboxTask"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+            <com.pinkal.todolist.customfont.TextView
+                android:id="@+id/txtTaskTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/checkboxTask"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:scrollbars="none"
+                android:text="@string/addCategory"
+                android:textColor="@color/darkGray"
+                android:textSize="18dp" />
+
+            <com.pinkal.todolist.customfont.TextView
+                android:id="@+id/txtTaskCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/txtTaskTitle"
+                android:text="@string/addCategory"
+                android:textSize="10dp" />
+
+            <com.pinkal.todolist.customfont.TextView
+                android:id="@+id/txtTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtTaskTitle"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/txtTaskTime"
+                android:layout_toRightOf="@id/checkboxTask"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:scrollbars="none"
+                android:text="@string/addCategory" />
+
+            <com.pinkal.todolist.customfont.TextView
+                android:id="@+id/txtTaskTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtTask"
+                android:layout_alignParentRight="true"
+                android:text="@string/addCategory"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

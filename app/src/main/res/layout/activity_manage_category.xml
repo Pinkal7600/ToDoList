@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_manage_category"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+            <com.pinkal.todolist.customfont.Button
+                android:id="@+id/btnBackManageCategory"
+                android:layout_width="40dp"
+                android:layout_height="58dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+                android:drawableTint="@color/white" />
+
+            <com.pinkal.todolist.customfont.TextView
+                android:id="@+id/toolbar_title_manage_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Toolbar Title"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_manage_category">
+
+            <!--<TextView-->
+            <!--android:id="@+id/txAddCategory"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:text="@string/addCategory"-->
+            <!--android:textColor="@color/colorPrimary" />-->
+            <LinearLayout
+                android:id="@+id/catLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <com.pinkal.todolist.customfont.TextInputLayout
+                    android:id="@+id/textInput_addCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="4"
+                    android:nextFocusLeft="@id/textInput_addCategory"
+                    android:nextFocusUp="@id/textInput_addCategory"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <com.pinkal.todolist.customfont.TextInputEditText
+                        android:id="@+id/edtAddCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/addCategory"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="15dp" />
+
+                </com.pinkal.todolist.customfont.TextInputLayout>
+
+                <com.pinkal.todolist.customfont.Button
+                    android:id="@+id/btnAddCategory"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="30dp"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_playlist_add_black_24dp"
+                    android:drawableTint="@color/colorPrimary" />
+            </LinearLayout>
+
+            <!--<ScrollView-->
+            <!--android:id="@+id/catScrollView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@+id/catLinearLayout"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingRight="5dp">-->
+
+            <ListView
+                android:id="@+id/categoryListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/catLinearLayout"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:dividerHeight="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scrollbars="vertical" />
+
+            <!--</ScrollView>-->
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

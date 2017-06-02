@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widgetRow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="10dp">-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/checkboxWidgetTask"-->
+    <!--android:layout_width="42dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:paddingRight="5dp" />-->
+
+    <TextView
+        android:id="@+id/txtWidgetTaskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:scrollbars="none"
+        android:singleLine="true"
+        android:text="@string/addCategory"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txtWidgetTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtWidgetTaskTitle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/txtWidgetTaskTime"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:scrollbars="none"
+        android:singleLine="true"
+        android:text="@string/addCategory"
+        android:textColor="@color/gray"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtWidgetTaskTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtWidgetTask"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/addCategory"
+        android:textColor="@color/gray"
+        android:textSize="10dp" />
+
+    <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+</RelativeLayout>

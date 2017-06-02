@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_add_update"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+            <com.pinkal.todolist.customfont.Button
+                android:id="@+id/btnBackAddUpdate"
+                android:layout_width="40dp"
+                android:layout_height="58dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+                android:drawableTint="@color/white" />
+
+            <com.pinkal.todolist.customfont.TextView
+                android:id="@+id/toolbar_title_add_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Toolbar Title"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_add_update">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.pinkal.todolist.customfont.TextView
+                    android:id="@+id/txTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/taskTitle"
+                    android:textColor="@color/colorPrimary" />
+
+
+                <com.pinkal.todolist.customfont.TextInputEditText
+                    android:id="@+id/edtEnterTaskTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txTitle"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/enterTaskTitle"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true" />
+
+                <com.pinkal.todolist.customfont.TextView
+                    android:id="@+id/txWhatDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtEnterTaskTitle"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/whatDone"
+                    android:textColor="@color/colorPrimary" />
+
+
+                <com.pinkal.todolist.customfont.TextInputEditText
+                    android:id="@+id/edtEnterTask"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txWhatDone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/task"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="15dp" />
+
+
+                <com.pinkal.todolist.customfont.TextView
+                    android:id="@+id/txdueDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtEnterTask"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/dueDate"
+                    android:textColor="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:id="@+id/addLinearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txdueDate"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.pinkal.todolist.customfont.TextInputEditText
+                        android:id="@+id/edtSetDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="4"
+                        android:cursorVisible="false"
+                        android:drawableRight="@drawable/ic_event_black_24dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/setDate"
+                        android:paddingLeft="15dp" />
+
+                    <com.pinkal.todolist.customfont.Button
+                        android:id="@+id/btnDateCancle"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/ic_cancel_black_24dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/addLinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addLinearLayout1"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="5">
+
+                    <com.pinkal.todolist.customfont.TextInputEditText
+                        android:id="@+id/edtSetTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="4"
+                        android:cursorVisible="false"
+                        android:drawableRight="@drawable/ic_query_builder_black_24dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/setTime"
+                        android:paddingLeft="15dp" />
+
+                    <com.pinkal.todolist.customfont.Button
+                        android:id="@+id/btnTimeCancle"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/ic_cancel_black_24dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <com.pinkal.todolist.customfont.TextView
+                    android:id="@+id/txaddCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addLinearLayout2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/addToCategory"
+                    android:textColor="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txaddCat"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <Spinner
+                        android:id="@+id/categorySpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="4"
+                        android:background="@drawable/apptheme_spinner_default_holo_light"
+                        android:backgroundTint="@color/colorAccent" />
+
+                    <com.pinkal.todolist.customfont.Button
+                        android:id="@+id/btnTaskAddCategory"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/ic_playlist_add_black_24dp"
+                        android:drawableTint="@color/colorPrimary" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

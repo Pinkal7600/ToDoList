@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuMainFinish"
+        android:icon="@drawable/ic_check_black_24dp"
+        android:title="@string/finish"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menuMainUnFinish"
+        android:icon="@drawable/ic_replay_black_24dp"
+        android:title="@string/unFinish"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuMainDelete"
+        android:icon="@drawable/ic_delete_white_24dp"
+        android:title="@string/delete"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuMainSetting"
+        android:orderInCategory="100"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+</menu>
