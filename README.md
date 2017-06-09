@@ -6,7 +6,7 @@ Play store : https://play.google.com/store/apps/details?id=com.todo.android
 Screenshots
 -------------
 
-<img src="screenshort/img1.png" height="400" alt="Screenshot"/> <img src="screenshort/img2.png" height="400" alt="Screenshot"/> <img src="screenshort/img3.png" height="400" alt="Screenshot"/> <img src="screenshort/img4.png" height="400" alt="Screenshot"/>
+<img src="screenshots/img1.png" height="400" alt="Screenshot"/> <img src="screenshots/img2.png" height="400" alt="Screenshot"/> <img src="screenshots/img3.png" height="400" alt="Screenshot"/> <img src="screenshots/img4.png" height="400" alt="Screenshot"/>
 
 License
 -------
